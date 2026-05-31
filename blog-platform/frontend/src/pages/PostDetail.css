@@ -1,0 +1,86 @@
+.post-detail { background: var(--paper); min-height: 100vh; }
+.post-detail-inner { max-width: 780px; margin: 0 auto; padding: 32px 24px 80px; }
+.post-detail-loading { display: flex; align-items: center; justify-content: center; min-height: 60vh; }
+
+.post-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; flex-wrap: wrap; gap: 12px; }
+.back-link { display: flex; align-items: center; gap: 6px; font-size: 14px; color: var(--ink-muted); font-weight: 600; text-decoration: none; }
+.back-link:hover { color: var(--accent); text-decoration: none; }
+.post-actions { display: flex; gap: 8px; }
+
+.post-article {}
+
+.post-header { margin-bottom: 24px; }
+.post-header-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+.post-date-detail, .post-readtime-detail { font-size: 13px; color: var(--ink-muted); display: flex; align-items: center; gap: 4px; }
+
+.post-title { font-size: clamp(28px, 5vw, 44px); line-height: 1.15; color: var(--ink); margin-bottom: 24px; }
+
+.post-author-row { display: flex; align-items: center; gap: 14px; }
+.author-avatar-lg {
+  width: 48px; height: 48px;
+  background: var(--ink-soft);
+  color: white;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; font-weight: 700; flex-shrink: 0;
+}
+.author-name-detail { font-size: 15px; font-weight: 600; color: var(--ink); }
+.author-bio-detail { font-size: 13px; color: var(--ink-muted); }
+
+.post-stats-bar { display: flex; align-items: center; gap: 20px; padding: 12px 0; }
+.stat-btn {
+  display: flex; align-items: center; gap: 6px;
+  background: none; color: var(--ink-muted);
+  font-size: 14px; padding: 6px 12px;
+  border-radius: 40px;
+  border: 1.5px solid var(--border);
+  transition: all 0.2s;
+}
+.stat-btn:hover { border-color: var(--accent); color: var(--accent); }
+.stat-btn.liked { color: #e74c3c; border-color: #e74c3c; background: rgba(231,76,60,0.06); }
+.stat-item { display: flex; align-items: center; gap: 6px; font-size: 14px; color: var(--ink-muted); }
+
+.post-body {
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--ink-soft);
+  white-space: pre-wrap;
+  margin-bottom: 32px;
+}
+
+.post-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
+
+/* Comments */
+.comments-section { margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border); }
+.comments-title { display: flex; align-items: center; gap: 8px; font-size: 22px; margin-bottom: 28px; }
+
+.comment-form { background: var(--paper-warm); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px; margin-bottom: 32px; }
+.comment-form-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.author-avatar-sm { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: white; background: var(--ink-soft); }
+.comment-as { font-size: 13px; color: var(--ink-muted); }
+.comment-as strong { color: var(--ink-soft); }
+.comment-form textarea { resize: vertical; min-height: 80px; }
+.comment-form-footer { display: flex; justify-content: flex-end; margin-top: 12px; }
+.comment-submit { display: flex; align-items: center; gap: 6px; }
+
+.comment-login-prompt { text-align: center; padding: 24px; background: var(--paper-warm); border: 1px solid var(--border); border-radius: var(--radius-md); margin-bottom: 32px; }
+
+.no-comments { text-align: center; padding: 40px; color: var(--ink-muted); }
+.no-comments svg { display: block; margin: 0 auto 12px; color: var(--border-dark); }
+.no-comments p { font-size: 15px; }
+
+.comment-item {
+  display: flex;
+  gap: 14px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+.comment-avatar { width: 36px; height: 36px; background: var(--ink-soft); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; flex-shrink: 0; }
+.comment-content { flex: 1; }
+.comment-header { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+.comment-header strong { font-size: 14px; color: var(--ink); }
+.comment-date { font-size: 12px; color: var(--ink-muted); }
+.comment-text { font-size: 15px; color: var(--ink-soft); line-height: 1.6; }
+.comment-delete { position: absolute; right: 0; top: 20px; color: var(--ink-muted); opacity: 0.5; }
+.comment-delete:hover { opacity: 1; color: #c0392b; }

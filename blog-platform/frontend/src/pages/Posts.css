@@ -1,0 +1,57 @@
+.posts-page {}
+
+.posts-hero {
+  background: linear-gradient(135deg, var(--ink) 0%, #2d2520 100%);
+  color: var(--paper);
+  text-align: center;
+  padding: 60px 24px 48px;
+}
+.posts-hero h1 { font-size: 42px; margin-bottom: 8px; }
+.posts-hero p { color: rgba(250,248,244,0.7); font-size: 16px; margin-bottom: 28px; }
+
+.search-form { display: flex; gap: 10px; max-width: 500px; margin: 0 auto; }
+.search-input-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--radius);
+  padding: 0 14px;
+}
+.search-input-wrap svg { color: rgba(255,255,255,0.5); flex-shrink: 0; }
+.search-input-wrap input { background: none; border: none; box-shadow: none; color: white; padding: 12px 0; }
+.search-input-wrap input::placeholder { color: rgba(255,255,255,0.4); }
+.search-input-wrap input:focus { box-shadow: none; border: none; }
+
+.posts-content { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+
+.category-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.cat-btn {
+  background: var(--paper-card);
+  border: 1.5px solid var(--border);
+  color: var(--ink-soft);
+  padding: 7px 16px;
+  border-radius: 40px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.cat-btn:hover { border-color: var(--accent); color: var(--accent); }
+.cat-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+
+.posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 24px; }
+.post-skeleton { height: 240px; background: var(--paper-warm); border-radius: var(--radius-md); animation: pulse 1.4s ease infinite; }
+
+.pagination { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 40px; }
+.pagination span { font-size: 14px; color: var(--ink-muted); }
+
+.empty-state { text-align: center; padding: 80px 24px; color: var(--ink-muted); }
+.empty-state svg { margin-bottom: 16px; color: var(--border-dark); }
+.empty-state h3 { font-size: 22px; margin-bottom: 8px; color: var(--ink-soft); }
